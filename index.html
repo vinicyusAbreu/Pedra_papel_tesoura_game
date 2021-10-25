@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GAME</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <img src="images/logo.svg" alt="logo">
+
+
+            <div class="container-score">
+
+                <div class="score">
+                    <p>YOUR SCORE</p>
+                    <p class="player">0</p>
+                </div>
+
+                <div class="score">
+                    <p>COMPUTER SCORE</p>
+                    <p class="computer">0</p>
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <section>
+        <!-- #TODO: container do jogo -->
+        <div class="container">
+
+            <div id="paper" class="paper" data-value="paper">
+                <span>
+                    <img src="images/icon-paper.svg" alt="paper">
+                </span>
+            </div>
+
+            <div id="rock" class="rock" data-value="rock">
+                <span>
+                    <img src="images/icon-rock.svg" alt="rock">
+                </span>
+            </div>
+
+
+            <div id="scissors" class="scissors" data-value="scissors">
+                <span>
+                    <img src="images/icon-scissors.svg" alt="scissor">
+                </span>
+            </div>
+
+        </div>
+        <!--: fim container do jogo -->
+
+        <!-- #TODO: container do resultado do jogo -->
+        <div class="container-results hidden">
+
+
+            <div class="result-player">
+                <p>YOU PICKED</p>
+
+                <div class="" data-box="player">
+                    <span>
+                        <img src="">
+                    </span>
+                </div>
+
+                <div id="userWin" class="box hidden"></div>
+            </div>
+
+
+
+            <div class="again scale-up-center hidden ">
+                <p class="match-result"></p>
+                <button class="btn-play">PLAY AGAIN</button>
+            </div>
+
+            <div class="result-computer">
+                <p>THE HOUSE PICKED</p>
+
+                <div class="invisible flip-horizontal-bottom-invisible">
+                    <span>
+                        
+                    </span>
+                </div>
+
+                <div class="flip-horizontal-bottom hidden " data-box="computer">
+                    <span>
+                        <img src="" >
+                    </span>
+                </div>
+                <div id="computerWin" class="box hidden"></div>
+            </div>
+
+        </div>
+        <!--: fim do container do resultado do jogo -->
+
+        <div class="rules">
+            <span>Rules</span>
+        </div>
+    </section>
+
+    <!-- #TODO: modal -->
+    <div class="modal hidden">
+        <div class="head-modal">
+            <h1>RULES</h1>
+            <img src="images/icon-close.svg" alt="icon close" data-modal="close-modal">
+        </div>
+
+        <img class="rules-img" src="images/image-rules.svg" alt="rules">
+    </div>
+    <div class="overlay hidden"></div>
+    <!--  fim do modal -->
+
+    <footer>
+        Criado por vinicius de abreu 👨‍💻
+    </footer>
+    <script src="js/app.js" async defer type="module"></script>
+</body>
+
+</html>
