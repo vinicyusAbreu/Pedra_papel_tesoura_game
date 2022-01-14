@@ -456,11 +456,12 @@ footer {
     }
     .container-results {
         /* position: relative; */
-        height: 60vh;
+        height: 53vh;
         width: 95%;
         justify-content: space-between;
         align-items: flex-start;
         gap: 0;
+        align-items: center;
        
         
     }
@@ -551,6 +552,12 @@ footer {
         width: 20rem;
     }
 }
+@media(max-width:365px){
+    .container-results {
+        /* position: relative; */
+        height: 60vh;
+    }
+}
 
 @media(max-width:330px) {
     #paper {
@@ -562,6 +569,13 @@ footer {
         position: absolute;
         right: 0rem;
         top: 1rem;
+    }
+    .container-results {
+       
+        height: 65vh;
+    
+       background-color: aqua;
+        
     }
 }
 
