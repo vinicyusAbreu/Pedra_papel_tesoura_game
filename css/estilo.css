@@ -455,15 +455,19 @@ footer {
         margin-top: 5rem;
     }
     .container-results {
-        /* position: relative; */
-        height: 53vh;
+        
+        height: 320px;
         width: 95%;
         justify-content: space-between;
         align-items: flex-start;
         gap: 0;
         align-items: center;
-       
+              
         
+    }
+    .result-player,
+    .result-computer {
+       align-self: start;
     }
     .again {
         position: absolute;
@@ -472,7 +476,7 @@ footer {
         right: 0;
         margin: 0 auto;
         margin-bottom: 3rem;
-        align-content: flex-end;
+        align-self: flex-end;
     }
     .btn-play {
         width: 50%;
@@ -570,9 +574,7 @@ footer {
         right: 0rem;
         top: 1rem;
     }
-    .container-results {
-        height: 65vh;
-    }
+
 }
 
 @media(max-width:290px) {
